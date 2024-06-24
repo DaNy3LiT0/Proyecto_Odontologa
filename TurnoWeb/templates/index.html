@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnos - Dra. Cinquegrani</title>
+    <link rel="icon" type="image/png" href="static\img\diente-sano.png">
+    <link rel="stylesheet" href="static\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static\img\logo-blanco.png" alt="Logo Odontología">
+            <h2 class="logo-nombre">CONSULTORIO ODONTOLOGICO</h2>
+        </div>
+        <div class="login-btn">
+            <i class="ri-login-box-line"></i>
+            <h2 class="login-nombre">LOGIN</h2>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="flip-card">
+                <div class="front">
+                    <h1>Bienestar para toda la familia</h1>
+                    <h2>Dra. Silvana Cinquegrani</h2>
+                    <p>Horario de atencion:</p>
+                    <p>Martes a Viernes de 16:00 a 20:00 hs</p>
+                    <p>Sábados de 08:00 a 12:00 hs</p>
+                    <p>Av. Belgrano (N) 1471</p>
+                    <p>Teléfono: 555-1234</p>
+                    <button class="turno-btn" onclick="toggleCard()">Solicitar Turno</button>
+                </div>
+                <div class="back">
+                    <form class="form-container">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"><br><br>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos"><br><br>
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono"><br><br>
+                        <button class="confirm-btn">Confirmar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="legales">
+            <p>&copy; 2023 Desarrollado por [Tu nombre]</p>
+        </div>
+        <div class="odontoFooter">
+            <img src="logo-odontologia.png" alt="Logo Odontología">
+            <img src="logo-odontologia.png" alt="Logo Odontología">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
