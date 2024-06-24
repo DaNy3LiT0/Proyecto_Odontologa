@@ -26,17 +26,20 @@
         <div class="card">
             <div class="flip-card">
                 <div class="front">
-                    <h1>Bienestar para toda la familia</h1>
                     <h2>Dra. Silvana Cinquegrani</h2>
+                    <h1>Bienestar para toda la familia</h1>                    
                     <p>Horario de atencion:</p>
                     <p>Martes a Viernes de 16:00 a 20:00 hs</p>
                     <p>Sábados de 08:00 a 12:00 hs</p>
+                    <br>
                     <p>Av. Belgrano (N) 1471</p>
+                    <br>
                     <p>Teléfono: 555-1234</p>
+                    <br>
                     <button class="turno-btn" onclick="toggleCard()">Solicitar Turno</button>
                 </div>
                 <div class="back">
-                    <form class="form-container">
+                    <form class="form-container" onsubmit="return confirmSubmission()">
                         <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" name="nombre"><br><br>
                         <label for="apellidos">Apellidos:</label>
@@ -47,7 +50,7 @@
                         <input type="email" id="email" name="email"><br><br>
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" name="telefono"><br><br>
-                        <button class="confirm-btn">Confirmar Solicitud</button>
+                        <button class="confirm-btn" type="submit">Confirmar Solicitud</button>
                     </form>
                 </div>
             </div>
@@ -55,7 +58,7 @@
     </main>
     <footer>
         <div class="legales">
-            <p>&copy; 2023 Desarrollado por [Tu nombre]</p>
+            <p>OdontoSys &copy; 2023 Desarrollado por CtrlShiftCoders</p>
         </div>
         <div class="odontoFooter">
             <img src="logo-odontologia.png" alt="Logo Odontología">

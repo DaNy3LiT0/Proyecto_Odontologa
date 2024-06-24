@@ -11,3 +11,7 @@ function toggleCard() {
         back.style.display = 'none';
     }
 }
+
+function confirmSubmission() {
+    return confirm("¿Está seguro de que desea confirmar los datos ingresados?");
+}
