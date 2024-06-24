@@ -20,7 +20,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 15px;
+        height: 20px;
     }
 
         .logo {
@@ -114,21 +114,12 @@ body {
             }
 
                 .flip-card .front {
-                    /* border-radius: 15px; */
-                    /* display: flex; */
-                    /* justify-content: center; */
-                    color:#015182;
-                    /* margin: 0.2rem; */
-                    /* position: absolute; */
-                    /* backface-visibility: hidden; */
+                    color: #015182;
                     padding: 5px;
-                    /* background-color: #37474F; */
-                    transition: opacity 0.5s;
                     background-color: #fff;
                     width: 100%;
-                    height: 200px; /* o el tamaño que desees */
+                    height: 200px;
                     display: block;
-                    visibility: visible;
                 }
 
                     .turno-btn {
@@ -145,27 +136,19 @@ body {
                     }
 
                 .flip-card .back {
-                    /* border-radius: 15px; */
-                    /* display: flex; */
-                    /* justify-content: center; */
-                    color:#015182;
-                    /* margin: 0.2rem; */
-                    /* position: absolute; */
-                    /* backface-visibility: hidden; */
+                    color: #015182;
                     padding: 5px;
-                    transition: opacity 0.5s;
                     background-color: #f0f0f0;
                     width: 100%;
-                    height: 200px; /* o el tamaño que desees */
+                    height: 100%;
                     display: none;
-                    visibility: hidden;
                 }
 
                     .form-container {
-                        display:none;
-                        display: block;
-                        /* ocultar formulario hasta que se haga click en solicitar turno */
+                        display: block; /* Mostrar el formulario siempre en la tarjeta trasera */
                         background-color: #B0BEC5;
+                        padding: 20px;
+                        border-radius: 10px;
                     }
                     
                         .confirm-btn {
