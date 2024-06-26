@@ -13,201 +13,313 @@ body {
     flex-direction: column;
 }
 
-    header {
-        /*background-color: rgba(145, 207, 207, 0.25);*/
-        box-shadow: 0px 2px 7px 0.5px lightblue;
-        padding: 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 20px;
-    }
+header {
+    /*background-color: rgba(145, 207, 207, 0.25);*/
+    box-shadow: 0px 2px 7px 0.5px lightblue;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+}
 
-        .logo {
-            display: flex;
-            align-items: center;
-        }
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-            .logo img {
-                margin-left: 20px;
-                height: 30px;
-            }
+.logo img {
+    margin-left: 20px;
+    height: 30px;
+}
 
-            .logo h2 {
-                color: aliceblue;
-                padding: 10px;
-                font-family:'Trebuchet MS';
-                font-weight: 500;
-                font-optical-sizing: auto;
-            }
+.logo h2 {
+    color: aliceblue;
+    padding: 10px;
+    font-family: 'Trebuchet MS';
+    font-weight: 500;
+    font-optical-sizing: auto;
+}
 
-        .login-btn {
-            display: flex;
-            justify-content: space-between;
-            margin-right: 20px;
-            align-items: center;
-            background-color:rgb(240, 248, 255, 0.3);
-            border: none;
-            border-radius: 3px;
-            padding: 0 5px 0 5px;
-            height: 30px;
-        }
+.login-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    align-items: center;
+    background-color: rgb(240, 248, 255, 0.3);
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px 0 5px;
+    height: 30px;
+}
 
-        .login-btn:hover{
-            background-color: #015182;          
-        }
+.login-btn:hover {
+    background-color: #015182;
+}
 
-            .ri-login-box-line{
-                color:#015182;
-                height: 14px;              
-            }
+.ri-login-box-line {
+    color: #015182;
+    height: 14px;
+}
 
-            .login-btn:hover .ri-login-box-line{
-                height: 16px;
-                color: aliceblue;
-            }
+.login-btn:hover .ri-login-box-line {
+    height: 16px;
+    color: aliceblue;
+}
 
-            .login-btn h2{   
-                font-family:'Trebuchet MS';
-                font-optical-sizing: auto;
-                font-size: 14px;
-                font-weight: 600;      
-                color: #015182;
-                cursor: pointer;
-                padding-left: 5px;
-                text-align: center;
-            }
+.login-btn h2 {
+    font-family: 'Trebuchet MS';
+    font-optical-sizing: auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #015182;
+    cursor: pointer;
+    padding-left: 5px;
+    text-align: center;
+}
 
-            .login-btn:hover h2{
-                color:aliceblue;
-            }
+.login-btn:hover h2 {
+    color: aliceblue;
+}
 
-            
-    main {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-        .card {
-            background-color: rgba(240, 248, 255, 0.3);
-            padding: 20px;
-            border: 2px solid rgb(240, 248, 255);
-            border-radius: 15px;
-            margin: 20px;
-            width: 100vh;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-        }
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            .flip-card {
-                /* background-color: rgba(240, 248, 255, 0.192); */
-                transition: transform 1s;
-                transform-style: preserve-3d;
-                text-align: center;
-                width: 100%;
-                height: 100%;
-                display: flex; /* Usa flexbox para centrar el contenido interno */
-                justify-content: center; /* Centra horizontalmente el contenido interno */
-                align-items: center; /* Centra verticalmente el contenido interno */
-            }
+.card {
+    background-color: rgba(240, 248, 255, 0.3);
+    padding: 20px;
+    border: 2px solid rgb(240, 248, 255);
+    border-radius: 15px;
+    margin: 20px;
+    width: 100vh;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente */
+}
 
-                .flip-card .front {
-                    /* background-color: #002d49; */
-                    color: #015182;
-                    border-radius: 15px; /* Bordes redondeados */
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-                    display: flex;
-                    flex-direction: column; /* Asegura que los elementos hijos se dispongan en columna */
-                    justify-content: center; /* Centra verticalmente el contenido interno */
-                    align-items: center; /* Centra horizontalmente el contenido interno */
-                    /* padding: 0px; */
-                }
+.flip-card {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-                    /* Estilos para el encabezado h1 */
-                    .flip-card .front h1 {
-                        font-family: "Chewy", system-ui;
-                        font-size: 40px; /* Tamaño de la fuente */
-                        color: #015182; /* Color del texto */
-                        margin-block:  15px; /* Espacio debajo del encabezado */
-                        font-weight:normal; /* Grosor de la fuente */
-                        line-height: 1;
-                    }
+.flip-card .front {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #015182;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-                    /* Estilos para el encabezado h2 */
-                    .flip-card .front h2 {
-                        font-family: 'Trebuchet MS';
-                        font-size: 2em; /* Tamaño de la fuente */
-                        color:aliceblue; /* Color del texto */
-                        margin-bottom: 5px; /* Espacio debajo del encabezado */
-                        margin-top: 0px;
-                        font-weight: bold; /* Grosor de la fuente */
-                    }
+/* Estilos para el encabezado h1 */
+.flip-card .front h1 {
+    font-family: "Chewy", system-ui;
+    font-size: 40px;
+    /* Tamaño de la fuente */
+    color: #015182;
+    /* Color del texto */
+    margin-block: 10px;
+    /* Espacio debajo del encabezado */
+    font-weight: normal;
+    /* Grosor de la fuente */
+    line-height: 1;
+}
 
-                    /* Estilos para los párrafos */
-                    .flip-card .front p {
-                        font-family: "Roboto", sans-serif;
-                        font-size: 1em; /* Tamaño de la fuente */
-                        color:aliceblue; /* Color del texto */
-                        line-height: 1; /* Altura de línea */
-                        margin-block: 5px; /* Espacio debajo de los párrafos */
-                    }
+/* Estilos para el encabezado h2 */
+.flip-card .front h2 {
+    font-family: 'Trebuchet MS';
+    font-size: 1.75em;
+    /* Tamaño de la fuente */
+    color: aliceblue;
+    /* Color del texto */
+    margin-bottom: 5px;
+    /* Espacio debajo del encabezado */
+    margin-top: 0px;
+    font-weight: bold;
+    /* Grosor de la fuente */
+}
 
-                    button.turno-btn {
-                        background-color: #015182; /* Establece el color de fondo del botón */
-                        color:aliceblue; /* Color del texto */
-                        padding: 10px 20px; /* Espaciado interno del botón */
-                        border: none; /* Sin borde */
-                        border-radius: 5px; /* Bordes redondeados */
-                        cursor: pointer; /* Cursor de mano para indicar que es un botón */
-                        transition: background-color 0.3s; /* Transición para el color de fondo */
-                    }
-                    
-                    .turno-btn:hover {
-                        background-color:#002d49;
-                    }
+/* Estilos para los párrafos */
+.flip-card .front p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    /* Tamaño de la fuente */
+    color: #015182;
+    /* Color del texto */
+    line-height: 1;
+    /* Altura de línea */
+    margin-block: 5px;
+    /* Espacio debajo de los párrafos */
+    font-weight: 500;
+}
 
-                .flip-card .back {
-                    color: #015182;
-                    padding: 5px;
-                    background-color: #f0f0f0;
-                    width: 100%;
-                    height: 100%;
-                    display: none;
-                }
+button.turno-btn {
+    background-color: #015182;
+    /* Establece el color de fondo del botón */
+    color: aliceblue;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Espaciado interno del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cursor de mano para indicar que es un botón */
+    transition: background-color 0.3s;
+    /* Transición para el color de fondo */
+}
 
-                    .form-container {
-                        display: block; /* Mostrar el formulario siempre en la tarjeta trasera */
-                        background-color: #B0BEC5;
-                        padding: 20px;
-                        border-radius: 10px;
-                    }
-                    
-                        button.confirm-btn {
-                            background-color: #015182; /* Establece el color de fondo del botón */
-                            color:aliceblue; /* Color del texto */
-                            padding: 10px 20px; /* Espaciado interno del botón */
-                            border: none; /* Sin borde */
-                            border-radius: 5px; /* Bordes redondeados */
-                            cursor: pointer; /* Cursor de mano para indicar que es un botón */
-                        }
-                        
-                        .confirm-btn:hover {
-                            background-color: #002d49;
-                        }
-            
-    footer {
-        background-color: rgba(240, 248, 255, 0.015);
-        box-shadow: 0px 2px 5px 1px #015182;
-        color: #fff;
-        padding: 15px;
-        text-align: center;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 20px;
-    }
+.turno-btn:hover {
+    background-color: #002d49;
+}
+
+.flip-card .back {
+    font-family: "Roboto", sans-serif;
+    color: #015182;
+    background-color: aliceblue;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    display: none; /* Cambiado a flex */
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    /* position: absolute; */
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px; 
+    border-radius: 5px;
+    /* background-color: rgba(206, 94, 131,.5);  */
+    margin: 1em;
+    align-items: center;    
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos hijos en el centro horizontalmente */
+    justify-content: center; /* Alinea los elementos hijos en el centro verticalmente */
+    /* background-color: blue; */
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.label_name {
+    /* background-color: aliceblue; */
+    padding: 0 0.5rem;
+    font-size: 0.9em;
+    color: #015182;
+    transition: transform 0.2s;
+    /* transform-origin: center; */
+    /* align-self: center; */
+    /* margin-bottom: 5px;  */
+    /* z-index: 100; */
+    /* grid-area: input; */
+    /* transform-origin: center left; */
+    position: absolute;
+    
+    /* text-align: left; */
+
+}
+
+.input {
+    background-color: aliceblue;
+    width: 100%;
+    font: inherit;
+    border-radius: 5px;
+    border: 2px solid #015182;
+    padding: 10px;
+    /* grid-area: input; */
+    
+    
+}
+
+.input:focus + .label_name,
+.input:not(:placeholder-shown) + .label_name {
+    transform: translateY(-125%) scale(.7);
+    background-color: aliceblue;
+}
+
+/* Estilos específicos para el campo de email para que ocupe toda la fila */
+.label-email {
+    grid-column: span 2;
+}
+
+/* Estilos para el botón de confirmación */
+button.confirm-btn {
+    grid-column: span 2;
+    background-color: #015182;
+    color: aliceblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.confirm-btn:hover {
+    background-color: #002d49;
+}
+
+
+footer {
+    background-color: rgba(240, 248, 255, 0.015);
+    box-shadow: 0px 2px 5px 1px #015182;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.legales, .odontoFooter{
+    font-size: 14px;
+    align-items: center;
+    padding: 15px; 
+    display: flex;
+    justify-content: space-between; 
+    gap: 5px;
+}
+.home__social-link{
+    color: aliceblue;
+    font-size: 1.5rem;
+    padding: 1.25px;
+    transition: background-color .3s;
+    place-items: center;
+  }
+  
+  .home__social-link:hover{
+    color: #015182;
+  }
+  

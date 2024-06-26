@@ -1,11 +1,11 @@
 function toggleCard() {
-    var flipCard = document.querySelector('.flip-card');
-    var front = flipCard.querySelector('.front');
-    var back = flipCard.querySelector('.back');
+    const flipCard = document.querySelector('.flip-card');
+    const front = document.querySelector('.flip-card .front');
+    const back = document.querySelector('.flip-card .back');
 
-    if (front.style.display === 'block' || front.style.display === '') {
+    if (front.style.display !== 'none') {
         front.style.display = 'none';
-        back.style.display = 'block';
+        back.style.display = 'flex';
     } else {
         front.style.display = 'block';
         back.style.display = 'none';
@@ -13,5 +13,5 @@ function toggleCard() {
 }
 
 function confirmSubmission() {
-    return confirm("¿Está seguro de que desea confirmar los datos ingresados?");
+    return confirm('¿Estás seguro de que los datos son correctos?');
 }
